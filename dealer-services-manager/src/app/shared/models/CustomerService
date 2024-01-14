@@ -1,0 +1,14 @@
+export class CustomerService {
+    customerId : number;
+    serviceId : number;
+    date : string;
+    isComplete : boolean;
+
+    constructor(customerId : number, serviceId : number, date : string, isComplete : boolean) {
+        this.customerId = customerId;
+        this.serviceId = serviceId;
+        this.date = date;
+        this.isComplete = isComplete;
+    }
+
+}
