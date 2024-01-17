@@ -1,9 +1,9 @@
 export class Service {
-    ServiceId : number;
-    LaborHours : number;
+    serviceId : number;
+    laborHours : number;
 
-    constructor(ServiceId : number, LaborHours : number) {
-        this.ServiceId = ServiceId;
-        this.LaborHours = LaborHours;
+    constructor(data : any) {
+        this.serviceId = data.serviceId;
+        this.laborHours = data.laborHours;
     }
 }

@@ -1,10 +1,5 @@
 <div class="container">
-  <div *ngFor="let dealer of Dealerships">
-    {{dealer.DealerId}}
-    {{dealer.DealerName}}
-    {{dealer.Address}}
-    {{dealer.Zip}}
-    {{dealer.State}}
-    {{dealer.Phone}}
+  <div *ngFor="let dealer of dealerships">
+    [{{dealer.dealerId}}] [{{dealer.dealerName}}] [{{dealer.city}}]
   </div>
 </div>

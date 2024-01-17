@@ -1,22 +1,21 @@
 export class Dealership {
-    DealerId : number;
-    DealerName : string;
-    Address : string;
-    Zip : string;
-    State : string;
-    City : string;
-    Phone : string;
-    Email : string;
+    dealerId : number;
+    dealerName : string;
+    address : string;
+    zip : string;
+    state : string;
+    city : string;
+    phone : string;
+    email : string;
 
-    constructor(DealerId : number, DealerName : string, Address : string, Zip : string, 
-        State : string, City : string, Phone : string, Email : string) {
-        this.DealerId = DealerId;
-        this.DealerName = DealerName;
-        this.Address = Address;
-        this.Zip = Zip;
-        this.State = State;
-        this.City = City;
-        this.Phone = Phone;
-        this.Email = Email;
+    constructor(data : any) {
+        this.dealerId = data.dealerId;
+        this.dealerName = data.dealerName;
+        this.address = data.address;
+        this.zip = data.zip;
+        this.state = data.state;
+        this.city = data.city;
+        this.phone = data.phone;
+        this.email = data.email;
     }
 }
