@@ -17,4 +17,10 @@ export class DealerService {
             })
         );
     }
+
+    getServiceById(serviceId : number) {
+        return this.http.get(`https://dealerservicesmanagerapi.azurewebsites.net/api/Service/GetServiceById?serviceId=${serviceId}`).pipe(
+            map((response : any) => new Service(response))
+        )
+    };
 }

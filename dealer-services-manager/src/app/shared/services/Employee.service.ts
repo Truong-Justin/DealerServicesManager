@@ -17,4 +17,10 @@ export class DealerService {
             })
         );
     }
+
+    getEmployeeById(employeeId : number) {
+        return this.http.get(`https://dealerservicesmanagerapi.azurewebsites.net/api/Employee/GetEmployeeById?employeeId=${employeeId}`).pipe(
+            map((response : any) => new Employee(response))
+        )
+    };
 }

@@ -17,4 +17,12 @@ export class DealerService {
             })
         );
     }
+
+    getDealerById(dealerId : number) {
+        return this.http.get(`https://dealerservicesmanagerapi.azurewebsites.net/api/Dealership/GetDealershipById?dealershipId=${dealerId}`).pipe(
+            map((response : any) => new Dealership(response))
+        )
+    };
+
+
 }
