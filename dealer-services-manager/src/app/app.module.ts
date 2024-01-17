@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DealershipModule } from './dealership/dealership.module';
+import { CustomerModule } from './customer/customer.module';
+import { EmployeeModule } from './employee/employee.module';
+import { ServiceModule } from './service/service.module';
+import { CustomerserviceModule } from './customerservice/customerservice.module';
 
 @NgModule({
   declarations: [
@@ -12,8 +15,11 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    FormsModule
+    DealershipModule,
+    CustomerModule,
+    EmployeeModule,
+    ServiceModule,
+    CustomerserviceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

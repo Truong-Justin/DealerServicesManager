@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Dealership } from '../models/Dealership';
+import { Dealership } from './Dealership';
 import { map } from 'rxjs';
 
 @Injectable({
