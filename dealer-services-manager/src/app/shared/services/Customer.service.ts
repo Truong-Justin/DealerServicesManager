@@ -7,7 +7,7 @@ import { map } from 'rxjs';
     providedIn: 'root'
 })
 
-export class DealerService {
+export class CustomerService {
     constructor(private http : HttpClient) { }
 
     getCustomers() {

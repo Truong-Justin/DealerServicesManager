@@ -1,4 +1,4 @@
-export class Service {
+export class DealerServices {
     serviceId : number;
     laborHours : number;
 
