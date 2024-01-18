@@ -16,7 +16,6 @@ import { CustomerserviceModule } from './customerservice/customerservice.module'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DealershipModule,
     CustomerModule,
     EmployeeModule,
     ServiceModule,

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DealerService } from '../Dealer.service';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-import { Dealership } from '../Dealership';
 
 @Component({
   selector: 'dealerdetailscomponent',

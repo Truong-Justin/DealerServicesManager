@@ -23,4 +23,8 @@ export class EmployeeService {
             map((response : any) => new Employee(response))
         )
     };
+
+    deleteEmployeeById(employeeId : number) {
+        return this.http.delete(`https://dealerservicesmanagerapi.azurewebsites.net/api/Employee/DeleteEmployee?employeeId=${employeeId}`);
+    }
 }

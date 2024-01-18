@@ -1,4 +1,5 @@
 export class CustomerService {
+    dealerName : string;
     serviceId : number;
     customerId : number;
     firstName : string;
@@ -9,6 +10,7 @@ export class CustomerService {
     isComplete : boolean;
 
     constructor(data : any) {
+        this.dealerName = data.dealerName;
         this.serviceId = data.serviceId;
         this.customerId = data.customerId;
         this.firstName = data.firstName;

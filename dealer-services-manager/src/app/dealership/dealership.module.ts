@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DealerIndexComponent } from './dealer-index/dealer-index.component';
 import { DealerdetailsComponent } from './dealerdetailscomponent/dealerdetailscomponent.component';
 import { RouterModule } from '@angular/router';
+import { DealerRoutingModule } from './dealer-routing.module';
 
 
 
@@ -16,10 +17,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     HttpClientModule,
-    RouterModule
-  ],
-  exports : [
-    DealerIndexComponent
+    DealerRoutingModule
   ]
 })
 export class DealershipModule { }

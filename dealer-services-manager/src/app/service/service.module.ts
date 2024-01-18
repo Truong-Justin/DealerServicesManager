@@ -2,18 +2,20 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ServiceIndexComponent } from './service-index/service-index.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { ServicesdetailsComponent } from './servicesdetails/servicesdetails.component';
 
 
 
 @NgModule({
   declarations: [
-    ServiceIndexComponent
+    ServiceIndexComponent,
+    ServicesdetailsComponent
   ],
   imports: [
     CommonModule,
     HttpClientModule,
-    FormsModule
+    RouterModule
   ],
   exports: [
     ServiceIndexComponent

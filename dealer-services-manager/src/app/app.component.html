@@ -1,5 +1,15 @@
-<div class="container">
-    <button routerLink="dealerships" class="mx-5">Dealerships</button>
-    <button routerLink="customers">Customers</button>
+
+<section class="bg-secondary text-light p-4 text-center text-sm-start">
+    <h1 class="text-center my-5 text-dark text-decoration-underline">Dealer Services Manager</h1>
+    <h5 class="text-light text-center">A simple angular application that gets its data from an API made with C# and Entity Framework Core </h5>
+</section>
+<div class="container my-5 text-center">
+    <button routerLink="dealers" type="button" class="mx-1 btn btn-sm btn-secondary">Dealerships</button>
+    <button routerLink="customers" class="mx-1 btn btn-sm btn-secondary">Customers</button>
+    <button routerLink="employees" class="mx-1 btn btn-sm btn-secondary">Employees</button>
+    <button routerLink="services" class="mx-1 btn btn-sm btn-secondary">Services</button>
+    <button routerLink="customerservices" class="mx-1 btn btn-sm btn-secondary">Customer Services</button>
 </div>
-<router-outlet></router-outlet>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>  
