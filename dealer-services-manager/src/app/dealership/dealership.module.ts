@@ -17,7 +17,8 @@ import { DealerRoutingModule } from './dealer-routing.module';
   imports: [
     CommonModule,
     HttpClientModule,
-    DealerRoutingModule
+    DealerRoutingModule,
+    RouterModule
   ]
 })
 export class DealershipModule { }
