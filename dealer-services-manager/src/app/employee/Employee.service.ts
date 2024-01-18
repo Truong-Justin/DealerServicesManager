@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Employee } from './Employee';
-import { map } from 'rxjs';
+import { Observable, map } from 'rxjs';
 
 @Injectable({
     providedIn: 'root'
@@ -10,7 +10,7 @@ import { map } from 'rxjs';
 export class EmployeeService {
     constructor(private http : HttpClient) { }
 
-    getEmployees() {
+    getEmployees(): Observable<Employee[]> {
         return this.http.get("https://dealerservicesmanagerapi.azurewebsites.net/api/Employee/GetAllEmployees").pipe(
             map((response : any) => { 
                 return response.map((item: any) => new Employee(item))
@@ -18,7 +18,7 @@ export class EmployeeService {
         );
     }
 
-    getEmployeeById(employeeId : number) {
+    getEmployeeById(employeeId : number): Observable<Employee> {
         return this.http.get(`https://dealerservicesmanagerapi.azurewebsites.net/api/Employee/GetEmployeeById?employeeId=${employeeId}`).pipe(
             map((response : any) => new Employee(response))
         )

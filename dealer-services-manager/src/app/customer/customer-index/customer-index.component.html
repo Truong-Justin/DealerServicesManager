@@ -1,5 +1,7 @@
 <div class="container">
     <li *ngFor="let customer of customers">
+        <a [routerLink]="['/customers', customer.customerId]">
         {{customer.customerId}} {{customer.firstName}} {{customer.lastName}}
+        </a>
     </li>
 </div>

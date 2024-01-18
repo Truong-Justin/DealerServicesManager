@@ -1,17 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { CustomerIndexComponent } from './customer-index/customer-index.component';
+import { CustomerdetailsComponent } from './customerdetails/customerdetails.component';
+
 
 
 
 @NgModule({
-  declarations: [CustomerIndexComponent],
+  declarations: [
+    CustomerIndexComponent,
+    CustomerdetailsComponent
+  ],
   imports: [
     CommonModule,
     HttpClientModule,
-    FormsModule
+    RouterModule
   ],
   exports : [
     CustomerIndexComponent

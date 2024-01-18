@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CustomerServicesService } from '../CustomerService.service';
-import { CustomerService } from 'src/app/customer/Customer.service';
+import { CustomerService } from '../CustomerService';
 
 @Component({
   selector: 'customerservice-index',

@@ -14,8 +14,6 @@ export class EmployeeIndexComponent implements OnInit {
   ngOnInit() : void {
     this.employeeService.getEmployees().subscribe((data : any) => {
       this.employees = data;
-      console.log(data);
     });
-
   };
 }

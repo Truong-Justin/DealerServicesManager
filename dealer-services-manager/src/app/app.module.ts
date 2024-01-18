@@ -8,9 +8,10 @@ import { EmployeeModule } from './employee/employee.module';
 import { ServiceModule } from './service/service.module';
 import { CustomerserviceModule } from './customerservice/customerservice.module';
 
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
