@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DealerServicesService } from '../DealerServices.service';
 import { ActivatedRoute, ParamMap } from '@angular/router';
+import { DealerServices } from '../DealerServices';
 
 @Component({
   selector: 'app-servicesdetails',
@@ -8,7 +9,7 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
   styleUrls: ['./servicesdetails.component.css']
 })
 export class ServicesdetailsComponent implements OnInit {
-  service : any = {};
+  service! : DealerServices;
 
   constructor(private dealerServiceService : DealerServicesService, private route : ActivatedRoute) { }
 

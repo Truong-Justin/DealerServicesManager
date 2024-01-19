@@ -7,6 +7,7 @@ import { CustomerserviceIndexComponent } from './customerservice/customerservice
 import { CustomerdetailsComponent } from './customer/customerdetails/customerdetails.component';
 import { EmployeedetailsComponent } from './employee/employeedetails/employeedetails.component';
 import { ServicesdetailsComponent } from './service/servicesdetails/servicesdetails.component';
+import { CustomerservicedetailsComponent } from './customerservice/customerservicedetails/customerservicedetails.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'services', component: ServiceIndexComponent},
   { path: 'services/:serviceId', component: ServicesdetailsComponent},
   { path: 'customerservices', component: CustomerserviceIndexComponent},
+  { path: 'customerservices/:customerId/services/:serviceId', component: CustomerservicedetailsComponent}
 ];
 
 

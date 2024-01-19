@@ -5,12 +5,12 @@
                 <div class="col-md-8">
                     <div class="card-body">
                         <h5 class="card-title card-text-color" id="text-underline">{{service.firstName}} {{service.lastName}}</h5>
-                        <p class="card-text card-text-color">Service Id: {{service.serviceName}}</p>
+                        <p class="card-text card-text-color">Service Name: {{service.serviceName}}</p>
                         <p class="card-text"><small class="card-date-color">Phone: {{service.date}}</small></p>
-                        <p class="card-text"><small class="card-date-color">Email: {{service.isComplete}}</small></p>
+                        <p class="card-text"><small class="card-date-color">Completed: {{service.isComplete}}</small></p>
                     </div>
                 </div>
-            <a [routerLink]="['/customerservices', service.serviceId]" class="card-link"></a>
+            <a [routerLink]="['/customerservices', service.customerId, 'services', service.serviceId]" class="card-link"></a>
         </div>
     </div>
 </div>

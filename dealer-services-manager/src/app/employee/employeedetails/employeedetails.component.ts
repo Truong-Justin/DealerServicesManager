@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { EmployeeService } from '../Employee.service';
 import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Employee } from '../Employee';
 
 @Component({
   selector: 'app-employeedetails',
@@ -8,7 +9,7 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
   styleUrls: ['./employeedetails.component.css']
 })
 export class EmployeedetailsComponent {
-  employee : any = {};
+  employee! : Employee;
 
   constructor(private employeeService : EmployeeService, private route : ActivatedRoute) { }
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CustomerService } from '../Customer.service';
 import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Customer } from '../Customer';
 
 @Component({
   selector: 'customerdetails',
@@ -8,7 +9,7 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
   styleUrls: ['./customerdetails.component.css']
 })
 export class CustomerdetailsComponent implements OnInit {
-  customer : any = {};
+  customer! : Customer;
 
   constructor(private customerService : CustomerService, private route : ActivatedRoute) { }
 

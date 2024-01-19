@@ -3,12 +3,13 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { CustomerserviceIndexComponent } from './customerservice-index/customerservice-index.component';
 import { RouterModule } from '@angular/router';
-
+import { CustomerservicedetailsComponent } from './customerservicedetails/customerservicedetails.component';
 
 
 @NgModule({
   declarations: [
-    CustomerserviceIndexComponent
+    CustomerserviceIndexComponent,
+    CustomerservicedetailsComponent
   ],
   imports: [
     CommonModule,

@@ -16,5 +16,11 @@ export class CustomerServicesService {
                 return response.map((item: any) => new CustomerService(item))
             })
         );
-    }
+    };
+
+    getCustomerServiceByIds(customerId : number, serviceId : number): Observable<CustomerService> {
+        return this.http.get(`https://dealerservicesmanagerapi.azurewebsites.net/api/CustomerServices/GetCustomerServiceById?customerId=${customerId}&serviceId=${serviceId}`).pipe(
+            map((response : any) => new CustomerService(response))
+        );
+    };
 }

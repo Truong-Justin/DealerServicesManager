@@ -1,1 +1,38 @@
-<h3>{{service.serviceName}}</h3>
+<div class="container d-none d-sm-none d-md-block">
+    <div class="my-5 mx-auto">
+        <div class="card shadow bg-light">
+            <div class="col-md-11 mx-auto">
+                <h1 class="mt-3 text-center text-decoration-underline">Customer Details</h1>
+                <hr />
+                <div class="card px-5 py-5 mx-5 my-5 shadow">
+                    <div class="row my-5">
+                        <div class="col text-center">
+                            <div class="form-outline">
+                                <h3 class="text-decoration-underline">Service Name</h3>
+                                <h5 class="fw-light">{{service.serviceName}}</h5>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <div class="form-outline">
+                                <h3 class="text-decoration-underline">Service Id</h3>
+                                <h5 class="fw-light">{{service.serviceId}}</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-5">
+                        <div class="col text-center">
+                            <div class="form-outline">
+                                <h3 class="text-decoration-underline">Labor Hours</h3>
+                                <h5 class="fw-light">{{service.laborHours}}</h5>
+                            </div>
+                        </div>
+                        <div class="col"></div>
+                    </div>
+                    <div class="mt-5">
+                        <button class="btn btn-dark" routerLink="/services">Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
